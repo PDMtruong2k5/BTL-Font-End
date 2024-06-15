@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+.container ul li button{
+    width: 85px;
+    height: 35px;
+    border-radius: 8px ;
+    padding: 0 8px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(10, 184, 10);
+ }
+ header{
+     background-color:#172226;
+     
+ }
+ header ul{
+     display: flex;
+     justify-content:space-evenly;
+     list-style: none;
+     align-items: center;
+ }
+ header ul li, a {
+     text-decoration: none;
+     color: white;
+     font-size: 12px;
+ }
+
+ header ul li:nth-child(2):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(3):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(4):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(5):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(6):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(7):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(8):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(9) {
+     position: relative;
+ }
+ header ul li:nth-child(9) input{
+     height: 30px;
+     border-radius: 5px;
+     border: none;
+     padding-left: 6px;
+     outline: none;
+ }
+
+ header ul li:nth-child(9) i {
+   position: absolute;
+   font-size: 15px;
+   right: 12px;
+   color: black;
+   line-height: 30px;
+   cursor: pointer;
+ }
+ header ul li:nth-child(10):hover button {
+    background-color: rgb(19, 224, 70);
+ }
+ header ul li:nth-child(11):hover button {
+    background-color: rgb(19, 224, 70);
+ }
+ .product {
+    padding-top: 15px;
+ }
+ .raw {
+    display: flex;
+     flex-wrap: wrap;
+  }
+  .cart {
+    margin-bottom: 20px;
+ }
+ .cart p {
+    font-family: var(--main-text-font);
+    margin: 0 20px;
+    font-size: 12px;
+    color: #797676;
+    }
+ .cart-top:nth-child(1):hover p {
+    color: rgb(47, 0, 174);
+ }
+  .product-content {
+    border-bottom: 1px solid black; 
+    margin-bottom: 25px;
+    margin: 0 70px;
+    
+   }
+ .product-1 {
+    width: 1100px;
+    background-color: #f8f2f2;
+    padding: 12px;
+    border-radius: 6px;
+    margin-left: 40px;
+    margin-top: 30px;
+ }
+ 
+ .product-content h2 {
+    font-family:Arial, Helvetica, sans-serif;
+ }
+ .product-content-items {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+ 
+ }
+ 
+ .product-content-item  {
+    width: 23%;
+    background-color: white;
+    padding: 50px 12px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+ 
+ }
+ .product-content-item img {
+    width: 100%;
+ }
+ .product-content-item-text {
+    margin-top: 10px;
+    list-style-type: none;
+ }
+ .product-content-item-text li {
+    margin-bottom: 25px;
+    text-align-last: center;
+    
+ }
+ .product-content-item-text a {
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+    
+ }
+ .product {
+    padding-bottom: 50px;
+    border-bottom: 3px solid #172226;
+    
+ }
+ .slir-container {
+    position: relative;
+    overflow: hidden;
+ }
+ 
+ .product-content-btn {
+    position: relative;
+    height: 600px;
+    transition: all 0.6s ease;
+    
+ }
+ .product-content-items {
+  position: absolute;
+ }
+ .product-content-item-text  a {
+    text-decoration: none;
+ }
+ .product-content-items:nth-child(2) {
+    transform: translateX(100%);
+ }
+ .product-content-item-text li:nth-child(2) a {
+    text-decoration: line-through;
+ }
+ .product-content-item-text li:nth-child(1):hover a {
+      color: rgb(46, 7, 206);
+ 
+ }
+
+ .row {
+    background-color: #1d1d1f;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+ }
+ .boxcenter {
+    width: 80%;
+    margin: 0 auto;
+ }
+ h3 {
+    color: white;
+ }
+ .boxfooter1 {
+    width: 31%;
+    float: left;
+    margin-right: 9%;
+ }
+ .font1 {
+    font-size: 25px;
+ }
+ .boxapp {
+    text-align: justify;
+    font-size: 15px;
+    color: #797676;
+    margin-top: 20px;
+ }
+ .icon {
+    margin-top: 15px;
+    color: white;
+ 
+ }
+ .boxfooter2 {
+    width: 30%;
+    float: left;
+ }
+ .boxfooter2 a {
+    color: white;
+ }
+ .HT {
+    margin-top: 20px;
+    text-decoration: underline;
+    color: white;
+ }
+ .boxfooter2 a:hover {
+    color: red;
+ }
+ .boxfooter3 {
+    width: 30%;
+    float: left;
+ }
+ .boxfooter3 a {
+    color: white;
+ }
+ .boxfooter3 a:hover {
+    color: red;
+ }
+ .LH {
+    margin-top: 20px;
+    text-decoration: underline;
+    color: white;
+ 
+ }
+ .mr10px {
+    margin-bottom: 6px;
+ }
+ .textcenter {
+    text-align: center;
+    color: white;
+ }

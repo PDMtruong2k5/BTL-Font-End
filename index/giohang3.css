@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+.container ul li button{
+    width: 85px;
+    height: 35px;
+    border-radius: 8px ;
+    padding: 0 8px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(10, 184, 10);
+ }
+ header{
+     background-color:#172226;
+     
+ }
+ header ul{
+     display: flex;
+     justify-content:space-evenly;
+     list-style: none;
+     align-items: center;
+ }
+ header ul li, a {
+     text-decoration: none;
+     color: white;
+     font-size: 12px;
+ }
+
+ header ul li:nth-child(2):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(3):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(4):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(5):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(6):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(7):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(8):hover a {
+    color: blue;
+ }
+ header ul li:nth-child(9) {
+     position: relative;
+ }
+ header ul li:nth-child(9) input{
+     height: 30px;
+     border-radius: 5px;
+     border: none;
+     padding-left: 6px;
+     outline: none;
+ }
+
+ header ul li:nth-child(9) i {
+   position: absolute;
+   font-size: 15px;
+   right: 12px;
+   color: black;
+   line-height: 30px;
+   cursor: pointer;
+ }
+ header ul li:nth-child(10):hover button {
+    background-color: rgb(19, 224, 70);
+ }
+ header ul li:nth-child(11):hover button {
+    background-color: rgb(19, 224, 70);
+ }
+ .raw {
+   display: flex;
+    flex-wrap: wrap;
+ }
+.product {
+   padding: 20px 0;
+
+}
+.cartegory-top {
+   margin-bottom: 10px;
+   border-bottom: 1px solid #172226;
+}
+.cartegory-top p {
+   font-family: var(--main-text-font);
+   margin: 0 12px;
+   font-size: 12px;
+   }
+   .cartegory-top:nth-child(1):hover p {
+      color: rgb(47, 0, 174);
+   }
+.product-content-left {
+   width: 50%;
+}
+
+.product-content-left-big-img {
+   width: 80%;
+}
+.product-content-left-big-img img {
+   width: 100%;
+   
+}
+
+.product-content-left-smail-img {
+   width: 20%;
+}
+.product-content-left-smail-img img {
+   width: 100%;
+   border: 1px solid black ;
+   border-radius: 6px;
+   cursor: pointer;
+}
+.product-content-right{
+   width: 50%;
+   padding-left: 20px;
+
+}
+.product-content-right-name {
+   font-family: var(--main-text-font);
+   font-size: 19px;
+}
+.product-content-right-name p {
+   color: #3f3d3d;
+   font-size: 15px ;
+}
+.product-content-right-price {
+   margin: 12px 0;
+   font-size: 20px;
+   font-weight: bold;
+   font-family: var(--main-text-font);
+}
+.product-content-right-price p:nth-child(1) a {
+   text-decoration: line-through;
+   color: black;
+   font-size: 20px;
+}
+.product-content-right-icon-item {
+   display: flex;
+   margin-right: 12px;
+   margin-bottom: 15px;
+}
+.product-content-right-icon-item i {
+   font-size: 12px;
+   margin-right: 6px;
+   color: green;
+   margin-top: 4px;
+}
+.product-content-right-button button{
+     width: 200px;
+     height: 50px;
+     display: flex;
+     justify-content:space-evenly;
+     align-items: center;
+     background-color: rgb(21, 20, 20);
+     color: white;
+     padding: 0 8px;
+     cursor: pointer;
+     margin-left: 25px;
+     margin-top: 20px;
+}
+.row {
+   background-color: #1d1d1f;
+   float: left;
+   width: 100%;
+   min-height: 50px;
+}
+.boxcenter {
+   width: 80%;
+   margin: 0 auto;
+}
+h3 {
+   color: white;
+}
+.boxfooter1 {
+   width: 31%;
+   float: left;
+   margin-right: 9%;
+}
+.font1 {
+   font-size: 25px;
+}
+.boxapp {
+   text-align: justify;
+   font-size: 15px;
+   color: #797676;
+   margin-top: 20px;
+}
+.icon {
+   margin-top: 15px;
+   color: white;
+
+}
+.boxfooter2 {
+   width: 30%;
+   float: left;
+}
+.boxfooter2 a {
+   color: white;
+}
+.HT {
+   margin-top: 20px;
+   text-decoration: underline;
+   color: white;
+}
+.boxfooter2 a:hover {
+   color: red;
+}
+.boxfooter3 {
+   width: 30%;
+   float: left;
+}
+.boxfooter3 a {
+   color: white;
+}
+.boxfooter3 a:hover {
+   color: red;
+}
+.LH {
+   margin-top: 20px;
+   text-decoration: underline;
+   color: white;
+
+}
+.mr10px {
+   margin-bottom: 6px;
+}
+.textcenter {
+   text-align: center;
+   color: white;
+}

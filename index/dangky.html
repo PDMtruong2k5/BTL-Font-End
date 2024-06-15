@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <link href="dangky.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div id="Submit">
+        <form action="" id="form-Submit">
+            <h1 class="heading" >Đăng Ký</h1>
+            <div class="font-ground">
+                <div id="sdt">
+                <label id="label">Email: </label><br>
+                </div>
+                <div id="nhap">
+                <input type="email" id="email" class="form-input" >
+                </div>
+            </div>
+            <div class="font-ground">
+                <div id="sdt">
+                <label id="label">Số điện thoại: </label>
+                </div>
+            <div id="nhap">
+                <input type="text" id="sdtt" class="form-input">
+            </div>
+            </div>
+            <div class="font-ground">
+                <div id="sdt">
+                <label id="label">Họ :</label>
+                </div>
+                <div id="nhap">
+                <input type="text" class="form-input" id="ho">
+                </div>
+            </div>
+            <div class="font-ground">
+                <div id="sdt">
+                <label id="label">Tên:</label>
+                </div>
+                <div id="nhap">
+                <input type="text" class="form-input" id="ten" >
+                </div>
+            </div>
+            <div class="font-ground">
+                <div id="sdt">
+                <label id="label">Giới tính:</label>
+                </div>
+                <div id="nhap">
+                <input type="radio" name="gender" id="font-male" value="Nam" class="sex">
+                <label for="font-male" style="color:#fff">Nam</label>
+                <input type="radio" name="gender" id="font-female" value="Nữ" class="sex">
+                <label for="font-male" style="color:#fff">Nữ</label>
+                <input type="radio" name="gender" id="font-other" value="Khác" class="sex">
+                <label for="font-male" style="color:#fff">Khác</label>
+                </div>
+            </div>
+            <div class="font-ground">
+                <label id="label">Ngày sinh:</label>
+               <input type="date" class="form-input" id="birth">
+            </div>
+            <div class="font-ground">
+                <div id="sdt">
+                <labe id="label">Username:</label>
+                </div>
+                <div id="nhap">
+                <input type="text" class="form-input" id="username" >
+                </div>
+            </div>
+            <div class="font-ground">
+                <div id="sdt">
+                <label type="" id="label">Password:</label>
+                </div>
+                <div id="nhap">
+                <input type="password" class="form-input" id="password">
+                </div>
+            </div>
+            <input type="submit" id="form-submit" value="Đăng ký" onclick="KT()">
+           <input type="reset" id="form-reset" value="Hủy">
+        </form>
+        </div>
+    </body>
+    <script src="jquery-3.7.1.js"></script>
+    <script type="text/javascript" language="javascript">
+        function KT(){
+            let email = document.getElementById("email").value;
+            if(email==""){
+                alert("Vui lòng nhập email !");
+                email.focus();
+            }
+            let sdt = document.getElementById("sdtt").value;
+            if(sdt==""){
+                alert("Vui lòng nhập sdt !");
+                sdt.focus();
+            }
+            var tong = 0;
+            for(let h of sdt){
+                 tong += 1;
+            }
+            if(tong<10){
+                alert("Số điện thoại không hợp lệ !");
+                sdt.focus();
+            }
+            let ten = document.getElementById("ten").value;
+            if(ten==""){
+                alert("Vui lòng nhập ten !");
+                ten.focus();
+            }
+            let ho = document.getElementById("ho").value;
+            if(ho==""){
+                alert("Vui lòng nhập họ !");
+                ho.focus();
+            }
+           let user = document.getElementById("username").value;
+            if(user==""){
+                alert("Vui lòng nhập tên đăng nhập !");
+                user.focus();
+            }
+            let pass = document.getElementById("password").value;
+            if(pass==""){
+                alert("Vui lòng nhập mật khẩu !");
+                pass.focus();
+            }
+            window.location.href = 'dangnhap.html'
+        }
+    </script>
+</html>

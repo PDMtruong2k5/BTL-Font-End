@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="dangnhap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="anh">
+        <img src="Ảnh chụp màn hình 2024-06-04 200541.png" alt="">
+    </div>
+        <div id="wrapper">
+        <form action="" id="from-login">
+            <h1 class="from-heading"> Đăng nhập</h1>
+                <p class="from-item">Bạn chưa có tài khoản?<a class="from-center" href="http://127.0.0.1:5500/dangky.html" >Đăng ký!</a></p>
+
+            <div class="from-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" class="from-input" id="username"placeholder="Username">
+            </div>
+            <div class="from-group">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" class="from-input" id="password" placeholder="Password">
+                <div id="eye">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </div>
+            <div class="from">
+                <a href="" style="color: red;">Quên mật khẩu?</a> 
+            </div>
+            
+            <button  class="from-submit" id="from-submit">Đăng nhập</button>
+            <input type="reset" value="Hủy" class="from-submit " id="from">
+        </form>
+        
+    </div>
+    
+    </div>
+    
+    <footer>
+        <div class="row">
+            <div class="boxcenter">
+         <div class="boxfooter1">
+            <h3 class="font1">SAMCENTER</h3>
+            <div class="boxapp">
+            <p>SamCenter là đại lý uỷ quyền SamSung tại Việt Nam. Trở thành đối tác với SamSung giúp SamCenter giữ vững cam kết luôn đem lại giá trị tốt nhất cho người dùng sản phẩm SamSung tại Việt Nam.
+Toàn bộ sản phẩm SamSung và nhiều sản phẩm phụ kiện… đều là hàng chính hãng được phân phối thông qua công ty SamSung Việt Nam, bảo hành tại các trung tâm uỷ quyền tại Việt Nam trong thời gian 12 tháng và đi kèm với mức giá tốt nhất thị trường từ SamCenter</p> 
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+         </div>
+         <div class="boxfooter2">
+            <h3>Hỗ trợ khách hàng</h3>
+            <div class="HT">
+            <div class="app-HT1 mr10px"><a href="">Chính sách bảo mật</a></div>
+            <div class="app-HT2 mr10px"><a href="">Chính sách trả góp</a></div>
+            <div class="app-HT3 mr10px"><a href="">Chính sách bảo vệ trung</a></div>
+            <div class="app-HT4 mr10px"><a href="">Chính sách giao hàng</a></div>
+            <div class="app-HT5 mr10px"><a href="">Chính sách bảo hành</a></div>
+            <div class="app-HT6 mr10px"><a href="">Hướng dẫn thanh toán</a></div>
+            </div>
+            
+         </div>
+         <div class="boxfooter3">
+            <h3>Thông tin</h3>
+            <div class="LH">
+            <div class="app-LH1 mr10px"><a href="">Phạm Đình Minh Trưởng</a></div>
+            <div class="app-LH2 mr10px"><a href="">Email:phamdinhminhtruong2005@gmail.com</a></div>
+            <div class="app-LH3 mr10px"><a href="">Mã sinh viên: 1771020705</a></div>
+         </div>
+            </div>
+            
+    </div>
+    </div>
+        <div class="row textcenter">
+            Địa chỉ: Số 76 Thái Hà, phường Trung Liệt, quận Đống Đa, thành phố Hà Nội, Việt Nam
+        </div>
+    </footer>
+    
+</body>
+<script src="jquery-3.7.1.js"></script>
+    <script type="text/javascript" langguage="javascript">
+    $(document).ready(function(){
+        
+        $('#from-submit').click(function(event){
+            event.preventDefault();
+                var username = $('#username').val();
+                var password = $('#password').val();
+                $('#usernameError').text('');
+                $('#passwordError').text('');
+                var isValid = true;
+        if (isValid) {
+            if (username === 'truong2005' && password === 'pdmt124578') {
+                alert('Đăng nhập thành công!');
+                window.location.href = 'trangchu.html'; 
+            } else {
+                alert('sai username hoặc password');
+            }
+        }
+            });
+
+            $('#from').click(function(){
+                $('#username').val('');
+                $('#password').val('');
+                $('#error-message').hide();
+            });
+            $('.from-center').click(function(){
+                window.location.href = "dangky.html"
+            });
+          $('#eye').click(function(){
+            $(this).toggleClass('open');
+            $(this).children('i').toggleClass(' fa-eye-slash fa-eye');
+            if($(this).hasClass('open')){
+                $(this).prev().attr('type' , 'text');
+            }else{
+                $(this).prev().attr('type' , 'password');
+            }
+          })
+      })
+</script>
+</html>
